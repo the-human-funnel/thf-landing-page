@@ -16,7 +16,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "The Human Funnel - AI-Powered Recruitment Automation",
   description: "Transform your hiring process with AI-powered candidate filtering, automated interviews, and data-driven insights. Process thousands of resumes in minutes.",
-    generator: 'v0.app'
+  generator: 'v0.app',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
