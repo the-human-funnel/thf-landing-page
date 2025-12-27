@@ -1,15 +1,22 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { Spotlight } from "@/components/ui/spotlight"
 import { ArrowRight, Sparkles, CheckCircle2 } from "lucide-react"
 
 export default function HeroSection() {
   return (
     <>
       <main className="overflow-x-hidden">
-        <section className="relative">
+        <section className="relative overflow-hidden">
           {/* Background gradient */}
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-background to-background" />
+
+          {/* Spotlight effect */}
+          <Spotlight
+            className="-top-40 left-0 md:-top-20 md:left-60"
+            fill="white"
+          />
 
           <div className="pb-24 pt-32 md:pb-32 lg:pb-40 lg:pt-44">
             <div className="mx-auto max-w-7xl px-6">

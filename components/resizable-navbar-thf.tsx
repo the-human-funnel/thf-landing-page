@@ -38,9 +38,13 @@ export default function THFNavbar() {
     <Navbar>
       {/* Desktop Navigation */}
       <NavBody>
-        <NavbarLogo />
-        <NavItems items={navItems} />
-        <div className="flex items-center gap-4">
+        <div className="flex items-center">
+          <NavbarLogo />
+        </div>
+        <div className="flex-1 flex justify-center">
+          <NavItems items={navItems} />
+        </div>
+        <div className="flex items-center gap-6">
           <NavbarButton variant="secondary" href="#contact">
             Login
           </NavbarButton>
@@ -57,7 +61,7 @@ export default function THFNavbar() {
           <MobileNavToggle isOpen={isMobileMenuOpen} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} />
         </MobileNavHeader>
 
-        <MobileNavMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)}>
+        <MobileNavMenu isOpen={isMobileMenuOpen}>
           {navItems.map((item, idx) => (
             <a
               key={`mobile-link-${idx}`}
