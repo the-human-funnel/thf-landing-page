@@ -1,0 +1,45 @@
+import THFNavbar from "@/components/resizable-navbar-thf"
+import HeroSection from "@/components/hero-section"
+import BentoFeatures from "@/components/bento-features"
+import THFTimeline from "@/components/thf-timeline"
+import AdvancedFeatures from "@/components/advanced-features"
+import PricingSection from "@/components/pricing-section"
+import CTASection from "@/components/cta-section"
+import FooterSection from "@/components/footer"
+
+export default function Home() {
+  return (
+    <main className="relative min-h-screen bg-background text-foreground selection:bg-primary/30">
+      <THFNavbar />
+
+      {/* Hero Section with sticky header */}
+      <HeroSection />
+
+      {/* Features Overview - 8 Stage Pipeline */}
+      <div id="features" className="scroll-mt-24">
+        <BentoFeatures />
+      </div>
+
+      {/* Deep Dive into Process Stages */}
+      <div id="process" className="scroll-mt-24">
+        <THFTimeline />
+      </div>
+
+      {/* Technical & Enterprise Capabilities */}
+      <AdvancedFeatures />
+
+      {/* Pricing and Packages */}
+      <div id="pricing" className="scroll-mt-24">
+        <PricingSection />
+      </div>
+
+      {/* Final Call to Action */}
+      <CTASection />
+
+      {/* Footer */}
+      <div id="contact">
+        <FooterSection />
+      </div>
+    </main>
+  )
+}
