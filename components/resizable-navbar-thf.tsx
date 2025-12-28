@@ -23,10 +23,6 @@ export default function THFNavbar() {
       link: "#process",
     },
     {
-      name: "Pricing",
-      link: "#pricing",
-    },
-    {
       name: "Contact",
       link: "#contact",
     },

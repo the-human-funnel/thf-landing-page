@@ -15,11 +15,6 @@ export function FloatingNavTHF() {
       icon: <IconInfoCircle className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Pricing",
-      link: "#pricing",
-      icon: <IconCurrencyDollar className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
       name: "Contact",
       link: "#contact",
       icon: <IconMail className="h-4 w-4 text-neutral-500 dark:text-white" />,

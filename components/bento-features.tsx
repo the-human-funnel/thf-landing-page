@@ -191,29 +191,5 @@ export default function BentoFeatures() {
     },
   ]
 
-  return (
-    <section id="features" className="py-20 px-4 relative">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">8-Stage AI-Powered Pipeline</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
-            From resume upload to final ranking, every stage is optimized for speed, accuracy, and transparency
-          </p>
-        </div>
-
-        <BentoGrid className="max-w-7xl mx-auto">
-          {features.map((feature, i) => (
-            <BentoGridItem
-              key={i}
-              title={feature.title}
-              description={feature.description}
-              header={feature.header}
-              icon={feature.icon}
-              className={feature.className}
-            />
-          ))}
-        </BentoGrid>
-      </div>
-    </section>
-  )
+  return null
 }

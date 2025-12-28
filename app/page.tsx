@@ -3,7 +3,6 @@ import HeroSection from "@/components/hero-section"
 import BentoFeatures from "@/components/bento-features"
 import THFTimeline from "@/components/thf-timeline"
 import AdvancedFeatures from "@/components/advanced-features"
-import PricingSection from "@/components/pricing-section"
 import CTASection from "@/components/cta-section"
 import FooterSection from "@/components/footer"
 
@@ -27,11 +26,6 @@ export default function Home() {
 
       {/* Technical & Enterprise Capabilities */}
       <AdvancedFeatures />
-
-      {/* Pricing and Packages */}
-      <div id="pricing" className="scroll-mt-24">
-        <PricingSection />
-      </div>
 
       {/* Final Call to Action */}
       <CTASection />
