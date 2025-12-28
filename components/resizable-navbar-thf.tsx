@@ -41,9 +41,6 @@ export default function THFNavbar() {
           <NavItems items={navItems} />
         </div>
         <div className="flex items-center gap-6">
-          <NavbarButton variant="secondary" href="#contact">
-            Login
-          </NavbarButton>
           <NavbarButton variant="gradient" href="#contact">
             Book a Demo
           </NavbarButton>
@@ -69,14 +66,6 @@ export default function THFNavbar() {
             </a>
           ))}
           <div className="flex w-full flex-col gap-4">
-            <NavbarButton
-              onClick={() => setIsMobileMenuOpen(false)}
-              variant="secondary"
-              className="w-full"
-              href="#contact"
-            >
-              Login
-            </NavbarButton>
             <NavbarButton
               onClick={() => setIsMobileMenuOpen(false)}
               variant="gradient"

@@ -55,7 +55,7 @@ export default function HeroSection() {
                     variant="outline"
                     className="h-12 px-8 text-base font-semibold bg-transparent"
                   >
-                    <Link href="#process">
+                    <Link href="https://github.com/the-human-funnel/the-human-funnel" target="_blank" rel="noopener noreferrer">
                       <span>See How It Works</span>
                     </Link>
                   </Button>
