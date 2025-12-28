@@ -44,8 +44,8 @@ export default function HeroSection() {
                 {/* CTAs */}
                 <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <Button asChild size="lg" className="group h-12 px-8 text-base font-semibold">
-                    <Link href="#get-started">
-                      <span>Start Filtering Now</span>
+                    <Link href="#contact">
+                      <span>Book a Demo</span>
                       <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
@@ -55,8 +55,8 @@ export default function HeroSection() {
                     variant="outline"
                     className="h-12 px-8 text-base font-semibold bg-transparent"
                   >
-                    <Link href="#demo">
-                      <span>Watch Demo</span>
+                    <Link href="#process">
+                      <span>See How It Works</span>
                     </Link>
                   </Button>
                 </div>

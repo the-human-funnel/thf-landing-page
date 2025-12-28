@@ -3,7 +3,7 @@ import HeroSection from "@/components/hero-section"
 import BentoFeatures from "@/components/bento-features"
 import THFTimeline from "@/components/thf-timeline"
 import AdvancedFeatures from "@/components/advanced-features"
-import CTASection from "@/components/cta-section"
+import ContactForm from "@/components/contact-form"
 import FooterSection from "@/components/footer"
 
 export default function Home() {
@@ -27,13 +27,13 @@ export default function Home() {
       {/* Technical & Enterprise Capabilities */}
       <AdvancedFeatures />
 
-      {/* Final Call to Action */}
-      <CTASection />
+      {/* Contact Form - Book a Demo */}
+      <div id="contact">
+        <ContactForm />
+      </div>
 
       {/* Footer */}
-      <div id="contact">
-        <FooterSection />
-      </div>
+      <FooterSection />
     </main>
   )
 }
