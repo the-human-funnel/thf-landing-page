@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: "The Human Funnel <onboarding@resend.dev>", // Replace with your verified domain
-      to: [process.env.CONTACT_EMAIL || "your-email@example.com"],
+      to: [process.env.CONTACT_EMAIL || "adityaghailbdrp1@gmail.com"],
       subject: `New Contact Message from ${firstName} ${lastName} at ${company}`,
       html: `
         <h2>New Contact Message</h2>
