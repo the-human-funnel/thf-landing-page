@@ -49,7 +49,7 @@ export default function HeroSection() {
                       <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
-                  <Button
+                  {/* <Button
                     asChild
                     size="lg"
                     variant="outline"
@@ -58,7 +58,7 @@ export default function HeroSection() {
                     <Link href="#demo">
                       <span>Watch Demo</span>
                     </Link>
-                  </Button>
+                  </Button> */}
                 </div>
 
                 {/* Social Proof / Key Benefits */}
