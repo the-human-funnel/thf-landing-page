@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { PostHogProvider } from "@/components/posthog-provider"
@@ -37,6 +38,7 @@ export default function RootLayout({
             <ContactFormProvider>{children}</ContactFormProvider>
           </ThemeProvider>
         </PostHogProvider>
+        <Analytics />
       </body>
     </html>
   )
