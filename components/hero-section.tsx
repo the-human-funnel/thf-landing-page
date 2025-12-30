@@ -49,16 +49,6 @@ export default function HeroSection() {
                       <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
-                  <Button
-                    asChild
-                    size="lg"
-                    variant="outline"
-                    className="h-12 px-8 text-base font-semibold bg-transparent"
-                  >
-                    <Link href="#demo">
-                      <span>Watch Demo</span>
-                    </Link>
-                  </Button>
                 </div>
 
                 {/* Social Proof / Key Benefits */}
