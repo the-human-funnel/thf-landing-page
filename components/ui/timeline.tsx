@@ -1,57 +1,45 @@
-"use client";
-import {
-  useScroll,
-  useTransform,
-  motion,
-} from "motion/react";
-import React, { useEffect, useRef, useState } from "react";
+"use client"
+import { useScroll, useTransform, motion } from "motion/react"
+import type React from "react"
+import { useEffect, useRef, useState } from "react"
 
 interface TimelineEntry {
-  title: string;
-  content: React.ReactNode;
+  title: string
+  content: React.ReactNode
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [height, setHeight] = useState(0);
+  const ref = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [height, setHeight] = useState(0)
 
   useEffect(() => {
     if (ref.current) {
-      const rect = ref.current.getBoundingClientRect();
-      setHeight(rect.height);
+      const rect = ref.current.getBoundingClientRect()
+      setHeight(rect.height)
     }
-  }, [ref]);
+  }, [ref])
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start 10%", "end 50%"],
-  });
+  })
 
-  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height])
+  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1])
 
   return (
-    <div
-      className="w-full bg-white font-sans md:px-10 dark:bg-neutral-950"
-      ref={containerRef}
-    >
+    <div className="w-full bg-white font-sans md:px-10 dark:bg-neutral-950" ref={containerRef}>
       <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
-        <h2 className="mb-4 max-w-4xl text-lg text-black md:text-4xl dark:text-white">
-          Changelog from my journey
-        </h2>
+        <h2 className="mb-4 max-w-4xl text-lg text-black md:text-4xl dark:text-white">8-Stages</h2>
         <p className="max-w-sm text-sm text-neutral-700 md:text-base dark:text-neutral-300">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
+          From resume upload to final ranking, every stage is optimized for speed, accuracy, and transparency
         </p>
       </div>
 
       <div ref={ref} className="relative mx-auto max-w-7xl pb-20">
         {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex justify-start pt-10 md:gap-10 md:pt-40"
-          >
+          <div key={index} className="flex justify-start pt-10 md:gap-10 md:pt-40">
             <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm">
               <div className="absolute left-3 flex size-10 items-center justify-center rounded-full bg-white md:left-3 dark:bg-black">
                 <div className="size-4 rounded-full border border-neutral-300 bg-neutral-200 p-2 dark:border-neutral-700 dark:bg-neutral-800" />
@@ -69,7 +57,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
           </div>
         ))}
-        {/* <CHANGE> Updated gradient to use lime-400 accent instead of purple/blue */}
+        {/* Updated gradient to use lime-400 accent instead of purple/blue */}
         <div
           style={{
             height: height + "px",
@@ -86,5 +74,5 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

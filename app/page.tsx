@@ -2,9 +2,8 @@ import THFNavbar from "@/components/resizable-navbar-thf"
 import HeroSection from "@/components/hero-section"
 import BentoFeatures from "@/components/bento-features"
 import THFTimeline from "@/components/thf-timeline"
-import AdvancedFeatures from "@/components/advanced-features"
-import PricingSection from "@/components/pricing-section"
-import CTASection from "@/components/cta-section"
+// <CHANGE> Replaced CTASection with ConnectSection
+import ConnectSection from "@/components/connect-section"
 import FooterSection from "@/components/footer"
 
 export default function Home() {
@@ -16,25 +15,17 @@ export default function Home() {
       <HeroSection />
 
       {/* Features Overview - 8 Stage Pipeline */}
-      <div id="features" className="scroll-mt-24">
+      {/* <div id="features" className="scroll-mt-24">
         <BentoFeatures />
-      </div>
+      </div> */}
 
       {/* Deep Dive into Process Stages */}
       <div id="process" className="scroll-mt-24">
         <THFTimeline />
       </div>
 
-      {/* Technical & Enterprise Capabilities */}
-      <AdvancedFeatures />
-
-      {/* Pricing and Packages */}
-      <div id="pricing" className="scroll-mt-24">
-        <PricingSection />
-      </div>
-
-      {/* Final Call to Action */}
-      <CTASection />
+      {/* <CHANGE> New Connect Section with Wobble Cards */}
+      <ConnectSection />
 
       {/* Footer */}
       <div id="contact">

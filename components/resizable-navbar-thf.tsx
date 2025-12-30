@@ -11,6 +11,9 @@ import {
 } from "@/components/ui/resizable-navbar"
 import { NavbarLogo } from "@/components/navbar-logo"
 import { useState } from "react"
+import { IconBrandGithub } from "@tabler/icons-react"
+import Link from "next/link"
+import posthog from "posthog-js"
 
 export default function THFNavbar() {
   const navItems = [
@@ -21,10 +24,6 @@ export default function THFNavbar() {
     {
       name: "Process",
       link: "#process",
-    },
-    {
-      name: "Pricing",
-      link: "#pricing",
     },
     {
       name: "Contact",
@@ -44,11 +43,18 @@ export default function THFNavbar() {
         <div className="flex-1 flex justify-center">
           <NavItems items={navItems} />
         </div>
-        <div className="flex items-center gap-6">
-          <NavbarButton variant="secondary" href="#contact">
-            Login
-          </NavbarButton>
-          <NavbarButton variant="gradient" href="#contact">
+        <div className="flex items-center gap-4">
+          <Link
+            href="https://github.com/the-human-funnel"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => posthog.capture("github_navbar_clicked")}
+            className="flex items-center gap-2 rounded-full border border-border/50 bg-background px-4 py-2 text-sm font-medium text-foreground transition-all hover:border-primary/50 hover:bg-muted"
+          >
+            <IconBrandGithub className="size-4" />
+            <span className="hidden sm:inline">GitHub</span>
+          </Link>
+          <NavbarButton variant="gradient" href="#contact" onClick={() => posthog.capture("book_demo_navbar_clicked")}>
             Book a Demo
           </NavbarButton>
         </div>
@@ -72,17 +78,25 @@ export default function THFNavbar() {
               <span className="block">{item.name}</span>
             </a>
           ))}
+          <Link
+            href="https://github.com/the-human-funnel"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              posthog.capture("github_mobile_navbar_clicked")
+              setIsMobileMenuOpen(false)
+            }}
+            className="flex items-center gap-2 rounded-lg border border-border/50 bg-background px-4 py-3 text-sm font-medium text-foreground transition-all hover:border-primary/50 hover:bg-muted"
+          >
+            <IconBrandGithub className="size-5" />
+            <span>View on GitHub</span>
+          </Link>
           <div className="flex w-full flex-col gap-4">
             <NavbarButton
-              onClick={() => setIsMobileMenuOpen(false)}
-              variant="secondary"
-              className="w-full"
-              href="#contact"
-            >
-              Login
-            </NavbarButton>
-            <NavbarButton
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => {
+                posthog.capture("book_demo_mobile_navbar_clicked")
+                setIsMobileMenuOpen(false)
+              }}
               variant="gradient"
               className="w-full"
               href="#contact"

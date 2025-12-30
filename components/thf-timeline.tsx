@@ -14,8 +14,8 @@ export default function THFTimeline() {
               <FileText className="size-8 text-primary" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-foreground">Resume Upload & Processing</h3>
-              <p className="text-sm text-muted-foreground">Bulk import up to 10,000 candidates</p>
+              <h3 className="text-2xl font-bold text-foreground">Resume Upload & Intelligent Processing</h3>
+              <p className="text-sm text-muted-foreground">Bulk upload and structured data extraction</p>
             </div>
           </div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -58,8 +58,8 @@ export default function THFTimeline() {
               <Brain className="size-8 text-primary" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-foreground">AI-Powered Resume Analysis</h3>
-              <p className="text-sm text-muted-foreground">Multi-provider intelligent evaluation</p>
+              <h3 className="text-2xl font-bold text-foreground">AI Resume Multi-Analysis</h3>
+              <p className="text-sm text-muted-foreground">Consensus scoring across GPT-4, Claude, and Gemini</p>
             </div>
           </div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -103,8 +103,8 @@ export default function THFTimeline() {
               <Linkedin className="size-8 text-primary" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-foreground">LinkedIn Professional Analysis</h3>
-              <p className="text-sm text-muted-foreground">Professional credibility scoring</p>
+              <h3 className="text-2xl font-bold text-foreground">LinkedIn Credibility Check</h3>
+              <p className="text-sm text-muted-foreground">Verification and professional network analysis</p>
             </div>
           </div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -148,7 +148,7 @@ export default function THFTimeline() {
             </div>
             <div>
               <h3 className="text-2xl font-bold text-foreground">GitHub Technical Assessment</h3>
-              <p className="text-sm text-muted-foreground">Code quality and project authenticity</p>
+              <p className="text-sm text-muted-foreground">Authentic commit history and code quality verification</p>
             </div>
           </div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -192,8 +192,8 @@ export default function THFTimeline() {
               <Phone className="size-8 text-primary" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-foreground">AI-Powered Interviews</h3>
-              <p className="text-sm text-muted-foreground">Automated phone screening</p>
+              <h3 className="text-2xl font-bold text-foreground">AI-Driven Automated Interviews</h3>
+              <p className="text-sm text-muted-foreground">VAPI-powered dynamic natural conversations</p>
             </div>
           </div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -237,8 +237,8 @@ export default function THFTimeline() {
               <ClipboardCheck className="size-8 text-primary" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-foreground">Interview Transcript Analysis</h3>
-              <p className="text-sm text-muted-foreground">Performance and competency scoring</p>
+              <h3 className="text-2xl font-bold text-foreground">Transcript & Competency Analysis</h3>
+              <p className="text-sm text-muted-foreground">Advanced NLP performance and accuracy scoring</p>
             </div>
           </div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -282,8 +282,8 @@ export default function THFTimeline() {
               <FileCheck className="size-8 text-primary" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-foreground">Comprehensive Scoring & Ranking</h3>
-              <p className="text-sm text-muted-foreground">Intelligent ranking with reasoning</p>
+              <h3 className="text-2xl font-bold text-foreground">Final Consensus Ranking</h3>
+              <p className="text-sm text-muted-foreground">Weighted composite scoring with transparent reasoning</p>
             </div>
           </div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -327,8 +327,8 @@ export default function THFTimeline() {
               <Award className="size-8 text-primary" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-foreground">Top Candidates Report</h3>
-              <p className="text-sm text-muted-foreground">Strong hire recommendations</p>
+              <h3 className="text-2xl font-bold text-foreground">Optimized Hire Ranking</h3>
+              <p className="text-sm text-muted-foreground">Strong hire recommendations and transparent reports</p>
             </div>
           </div>
           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
