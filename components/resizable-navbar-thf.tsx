@@ -45,7 +45,7 @@ export default function THFNavbar() {
         </div>
         <div className="flex items-center gap-4">
           <Link
-            href="https://github.com/the-human-funnel"
+            href="https://github.com/the-human-funnel/the-human-funnel"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => posthog.capture("github_navbar_clicked")}
