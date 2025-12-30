@@ -14,6 +14,7 @@ import { useState } from "react"
 import { IconBrandGithub } from "@tabler/icons-react"
 import Link from "next/link"
 import posthog from "posthog-js"
+import { useContactForm } from "@/contexts/contact-form-context"
 
 export default function THFNavbar() {
   const navItems = [
@@ -32,6 +33,7 @@ export default function THFNavbar() {
   ]
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { openContactForm } = useContactForm()
 
   return (
     <Navbar>
@@ -54,7 +56,14 @@ export default function THFNavbar() {
             <IconBrandGithub className="size-4" />
             <span className="hidden sm:inline">GitHub</span>
           </Link>
-          <NavbarButton variant="gradient" href="#contact" onClick={() => posthog.capture("book_demo_navbar_clicked")}>
+          <NavbarButton
+            as="button"
+            variant="gradient"
+            onClick={() => {
+              posthog.capture("book_demo_navbar_clicked")
+              openContactForm()
+            }}
+          >
             Book a Demo
           </NavbarButton>
         </div>
@@ -93,13 +102,14 @@ export default function THFNavbar() {
           </Link>
           <div className="flex w-full flex-col gap-4">
             <NavbarButton
+              as="button"
               onClick={() => {
                 posthog.capture("book_demo_mobile_navbar_clicked")
+                openContactForm()
                 setIsMobileMenuOpen(false)
               }}
               variant="gradient"
               className="w-full"
-              href="#contact"
             >
               Book a Demo
             </NavbarButton>
